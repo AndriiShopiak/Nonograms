@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+:root {
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #01797b;
+  transition: .6s ease;
+}
+.header {
+  width: 100%;
+  background: salmon;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 40px;
+  padding: 20px 40px;
+  font-family: 'Suez One', serif;
+}
+.header img {
+  width: 30px;
+  cursor: pointer;
+}
+.header img:last-child {
+  display: none;
+}
+.header_menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.timer_con {
+  width: 120px;
+}
+.reset_game_btn {
+  font-size: 16px;
+  padding: 5px;
+  background: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .6s ease;
+  font-weight: bold;
+  color: #fff;
+}
+.reset_game_btn:hover {
+  background: rgb(40, 40, 40);
+  color: #fff;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 10px;
+}
+.game_frame {
+  border: 1px solid black;
+}
+.top_frame {
+  border-bottom: 1px solid rgb(46, 46, 46);
+  height: 65px;
+  background: #a3a3a3;
+  display: flex;
+}
+.top_frame div {
+  display: flex;
+  border: 1px solid black;
+  width: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.top_frame div:first-child {
+  width: 65px;
+  background: black;
+}
+.main_con {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left_panel {
+  display: flex;
+  flex-direction: column;
+  width: 65px;
+}
+.left_panel div {
+  background: #a3a3a3;
+  border: 1px solid black;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-weight: bold;
+}
+.con_for_general {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cells_con {
+  display: grid;
+  grid-template-columns: repeat(5, 30px);
+  grid-template-rows: repeat(5, 30px);
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.cells_item {
+  border: 1px solid #aaa;
+  cursor: pointer;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.modal_tab {
+  display: absolute;
+  background: #01797b;
+}
+.cross_icon {
+  display: none;
+  max-width: 30px;
+}
+.winner_title {
+  font-size: 45px;
+  color: #fff;
+}
+.additional_game_block {
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.another_game_title {
+  padding-bottom: 20px;
+}
+.easy_topic {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.easy_topic_title {
+  text-align: center;
+  background: salmon;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.easy_topic__block {
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all .6s ease;
+}
+.easy_topic__block img {
+  width: 100%;
+}
+.easy_topic__block:hover {
+  transform: scale(1.05);
+}
+.cells_item:hover {
+  background: #dfd7d7;
+}
+.active {
+  background: black;
+}
+.active:hover {
+  background: black;
+}
+.cross_active img {
+  display: inline;
+}
+/* .done {
+  background: black;
+} */
